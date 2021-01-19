@@ -5,7 +5,9 @@
   "description": "Headless CMS Flexible Content Project",
   "scripts": {
     "dev": "next dev",
-    "build": "echo 'Building Sanity to public/studio…' && cd studio && sanity build ../public/studio -y && cd .. && next build",
+    "build": "npm run build:sanity && pwd && npm run build:web",
+    "build:web": "next build",
+    "build:sanity": "cd studio && sanity build ../public/studio -y && cd ..",
     "start": "next start",
     "start:sanity": "cd studio && sanity start"
   },

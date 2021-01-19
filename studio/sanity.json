@@ -5,8 +5,8 @@
     "basePath": "/studio"
   },
   "api": {
-    "projectId": "68nsbl98",
-    "dataset": "production"
+    "projectId": "PLACEHOLDER",
+    "dataset": "PLACEHOLDER"
   },
   "plugins": [
     "@sanity/base",
