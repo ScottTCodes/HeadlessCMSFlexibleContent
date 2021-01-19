@@ -1,7 +1,8 @@
 {
   "root": true,
   "project": {
-    "name": "Headless CMS"
+    "name": "Headless CMS",
+    "basePath": "/studio"
   },
   "api": {
     "projectId": "68nsbl98",
