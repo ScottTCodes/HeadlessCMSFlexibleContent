@@ -9,7 +9,7 @@
     "build:web": "next build",
     "build:sanity": "cd studio && sanity build ../public/studio -y && cd ..",
     "start": "next start",
-    "start:sanity": "cd studio && sanity start"
+    "start:sanity": "cp .env ./studio/.env.development && cd studio && sanity start"
   },
   "dependencies": {
     "@sanity/client": "^2.1.4",
