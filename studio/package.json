@@ -4,11 +4,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "package.json",
-  "author": "Scott Taylor <scott@coalfacedevelopment.com>",
-  "license": "UNLICENSED",
+  "author": "Scott Taylor <scott1996taylor@outlook.com>",
+  "license": "MIT",
   "scripts": {
-    "start": "sanity start",
-    "build": "sanity build"
+    "start": "sanity start"
   },
   "keywords": [
     "sanity"
