@@ -3230,8 +3230,8 @@ ee-first@1.1.1:
   resolved "https://registry.npmjs.org/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
 
 electron-to-chromium@^1.3.30, electron-to-chromium@^1.3.634:
-  version "1.3.641"
-  resolved "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.3.641.tgz#03f14efd70a7971eff2efc947b3c1d0f717c82b9"
+  version "1.3.642"
+  resolved "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.3.642.tgz#8b884f50296c2ae2a9997f024d0e3e57facc2b94"
 
 element-resize-detector@1.1.13:
   version "1.1.13"
@@ -6804,6 +6804,10 @@ react-hot-loader@^4.12.11:
 react-icon-base@^2.1.2:
   version "2.1.2"
   resolved "https://registry.npmjs.org/react-icon-base/-/react-icon-base-2.1.2.tgz#a17101dad9c1192652356096860a9ab43a0766c7"
+
+react-icons@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.npmjs.org/react-icons/-/react-icons-4.1.0.tgz#9ca9bcbf2e3aee8e86e378bb9d465842947bbfc3"
 
 react-intl@^2.2.2:
   version "2.9.0"
