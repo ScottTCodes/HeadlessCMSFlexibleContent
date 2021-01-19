@@ -1,4 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Creating a Headless Flexible Content Project
+
+We will need to create a new next js instance and a fresh sanity instance.
+Starting with the next js project which will also create the repository we will want to run:
+
+```
+npx create-next-app
+# or
+yarn create next-app
+```
+
+In the directory of your choice inside your terminal/bash.
+
+We will then inside this repository need to create the sanity studio.
+This can be done by running:
+
+```
+sanity init
+```
+
+Inside your terminal/bash. This will require the sanity CLI which if you don't have installed can be installed by: 
+
+```
+npm install -g @sanity/cli
+```
+or by following - https://www.sanity.io/docs/getting-started-with-sanity-cli.
+
+### Setting up files
+
+
+
 
 ## Getting Started
 
