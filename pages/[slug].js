@@ -24,7 +24,7 @@ export async function getStaticPaths () {
     .fetch(`*[_type == "route" && defined(slug.current)]{
     "params": {"slug": slug.current}
   }`)
-
+  console.log(routes);
   return {
     paths: routes || null,
     fallback: true
