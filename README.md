@@ -25,9 +25,15 @@ npm install -g @sanity/cli
 ```
 or by following - https://www.sanity.io/docs/getting-started-with-sanity-cli.
 
-### Setting up files
+### Pitfalls
 
+When setting up a project of this stack there are a couple of easy bugs to run into.
 
+If you are having problems with vercel and it not being able to find `@sanity/core` make sure you have lerna setup.
+This will bootstrap the project with the studio package.json dependencies so that they can be used by the vercel.
+
+Another issue I ran into was `Error: Invalid 'paths' value returned from getStaticPaths in /[slug].`
+This is can be caused by the client using the wrong project ID from vercel environment variables not matching the project you are using.
 
 
 ## Getting Started
