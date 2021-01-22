@@ -12,7 +12,7 @@ export async function getStaticProps ({ params = {}, preview = false }) {
   const { slug } = params
   const { page: pageData } = await getClient(preview).fetch(query, {
     slug
-  })
+  });
 
   return {
     props: { preview, pageData, slug }
@@ -37,11 +37,11 @@ export default function PageContainer ({ pageData, preview, slug }) {
     return <Error statusCode={404} />
   }
 
-  const { data: { page = {} } = {} } =  usePreviewSubscription(query, {
+  const { data: { page = pageData } = {} } = usePreviewSubscription(query, {
     params: { slug },
     initialData: pageData,
-    enabled: preview || router.query.preview !== null
+    enabled: preview || (router.query.preview !== undefined && router.query.preview !== null)
   });
 
-  return <PageTemplate page={page} />
+  return <PageTemplate page={page} />;
 }

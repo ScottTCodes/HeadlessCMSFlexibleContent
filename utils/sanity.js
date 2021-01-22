@@ -26,7 +26,6 @@ export const urlFor = (source) => createImageUrlBuilder(config).image(source);
 
 // Set up the live preview subsscription hook
 export const usePreviewSubscription = createPreviewSubscriptionHook(config);
-console.log(config);
 
 // Set up Portable Text serialization
 export const PortableText = createPortableTextComponent({
