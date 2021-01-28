@@ -40,6 +40,7 @@ export const sanityClient = createClient(config);
 export const previewClient = createClient({
   ...config,
   useCdn: false,
+  withCredentials: true
 });
 
 // Helper function for easily switching between normal client and preview client

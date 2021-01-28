@@ -1,7 +1,7 @@
 import Error from 'next/error';
 import { groq } from 'next-sanity';
 import { useRouter } from 'next/router';
-import PageTemplate from '../components/Templates/PageTemplate';
+import PageTemplate from '../templates/PageTemplate';
 import { getClient, usePreviewSubscription } from '../utils/sanity';
 
 const query = groq`*[_type == "route" && slug.current == $slug][0]{
@@ -40,7 +40,7 @@ export default function PageContainer ({ pageData, preview, slug }) {
   const { data: { page = pageData } = {} } = usePreviewSubscription(query, {
     params: { slug },
     initialData: pageData,
-    enabled: preview || (router.query.preview !== undefined && router.query.preview !== null)
+    enabled: preview || router.query.preview
   });
 
   return <PageTemplate page={page} />;

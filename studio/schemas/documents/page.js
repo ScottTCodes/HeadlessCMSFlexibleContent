@@ -1,3 +1,5 @@
+import components from '../components';
+
 export default {
   name: "page",
   type: "document",
@@ -10,16 +12,29 @@ export default {
   ],
   fields: [
     {
-      name: "title",
-      type: "string",
-      title: "Title",
+      name: 'title',
+      type: 'string',
+      title: 'Page Title',
+      description: 'Enter a title for the page'
     },
-    // {
-    //   name: "content",
-    //   type: "array",
-    //   title: "Page sections",
-    //   of: [{ type: "hero" }, { type: "imageSection" }, { type: "textSection" }],
-    // },
+    {
+      name: 'components',
+      title: 'Components',
+      type: 'array',
+      description: 'Choose which components this page will display',
+      showIcons: false,
+      of: components,
+      options: {
+        collapsible: true,
+        collapsed: false,
+      }
+    },
+    {
+      name: 'publishedAt',
+      type: 'datetime',
+      title: 'Published at',
+      description: 'Set a particular time for this page to go live. Leave blank for it to go live on save/publish.'
+    },
     {
       name: "description",
       type: "text",
@@ -28,10 +43,14 @@ export default {
       fieldset: "metadata",
     },
   ],
-
   preview: {
     select: {
-      title: "title",
+      title: 'title',
     },
-  },
+    prepare({ title = 'No title' }) {
+      return {
+        title,
+      }
+    }
+  }
 };

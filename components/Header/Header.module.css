@@ -1,0 +1,8 @@
+.heroTitle {
+  font-size: 30px;
+  line-height: 38px;
+}
+
+.heroTitle + .heroTitle {
+  margin-top: 20px;
+}
